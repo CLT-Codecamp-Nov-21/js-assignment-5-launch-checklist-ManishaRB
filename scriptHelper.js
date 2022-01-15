@@ -71,7 +71,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         launchStatus.innerHTML = "Shuttle not ready for launch";
         launchStatus.style.color = "rgb(199, 37, 78)";
     }
-    faultyItems.style.visibility = "visible";
+    list.style.visibility = "visible";
 }
 
 async function myFetch() {
