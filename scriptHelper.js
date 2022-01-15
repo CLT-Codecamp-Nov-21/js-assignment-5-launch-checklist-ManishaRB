@@ -65,10 +65,10 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     }
 
     if (flag) {
-        launchStatus.innerHTML = "Shuttle ready for launch";
+        launchStatus.innerHTML = "Shuttle is Ready for Launch";
         launchStatus.style.color = "rgb(65, 159, 106)";
     } else {
-        launchStatus.innerHTML = "Shuttle not ready for launch";
+        launchStatus.innerHTML = "Shuttle Not Ready for Launch";
         launchStatus.style.color = "rgb(199, 37, 78)";
     }
     list.style.visibility = "visible";
