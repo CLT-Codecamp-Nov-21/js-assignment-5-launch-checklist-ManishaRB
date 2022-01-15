@@ -1,7 +1,7 @@
 // Write your helper functions here!
 try{
 require('isomorphic-fetch');
-} catch {
+} catch (e){
     //doNothing
 }
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
@@ -78,14 +78,13 @@ async function myFetch() {
     let planetsReturned;
     planetsReturned = await fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
         return response.json();
-});
+    });
     return planetsReturned;
 }
 
 function pickPlanet(planets) {
     let selectedPlanet = Math.floor(Math.random() * planets.length);
-    return planets[selectedPlanet];
-    
+    return planets[selectedPlanet]; 
 }
 try{
 module.exports.addDestinationInfo = addDestinationInfo;

@@ -6,13 +6,10 @@ window.addEventListener("load", function() {
    let listedPlanetsResponse = myFetch();
    listedPlanetsResponse.then(function (result) {
        listedPlanets = result;
-        //console.log(listedPlanets);
     }).then(function () {
        let planet = pickPlanet(listedPlanets);
-       //console.log(planet);
         addDestinationInfo(document, planet.name, planet.diameter, planet.star, planet.distance, planet.moons, planet.image);
     });
-    let alertMessage ="";
     let list = document.getElementById('faultyItems');
     let form = document.querySelector("form");
     list.style.visibility = "hidden";
